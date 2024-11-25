@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* A modern, clean font */
+    color: #ffffff; /* White text for readability */
+    background: radial-gradient(circle, #1e3c72, #2a5298, #0f2027); /* Vibrant gradient background */
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Section styling */
+section {
+    background: rgba(255, 255, 255, 0.15); /* Frosted glass effect */
+    backdrop-filter: blur(10px); /* Blurred background behind content */
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling images */
+.img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* More prominent shadow */
+}
+
+/* Styling video */
+video {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9); /* Softer white for readability */
+    text-align: justify;
+    margin-top: 15px;
+}
+
+/* Add subtle hover effect for interactive feeling */
+p:hover {
+    color: #ffcc70; /* A warm accent color */
+    transition: color 0.3s ease;
+}
